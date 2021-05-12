@@ -111,7 +111,7 @@
 
  # Developer Guide Creator and Licensing: Monday May 12th, 2021
 
- **Project Managers/Salesforce Developer**
+ **Project Manager/Salesforce Developer**
  * Project Manager: Brantley Pace
  * LinkedIn: https://www.linkedin.com/in/brantley-pace/
  * Email: brantley@getupsell.com
