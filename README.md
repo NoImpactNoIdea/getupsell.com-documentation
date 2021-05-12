@@ -67,6 +67,29 @@
 
  > With the GDPR, Europe is signaling its firm stance on data privacy and security at a time when more people are entrusting their personal data with cloud services and breaches are a daily occurrence. The regulation itself is large, far-reaching, and fairly light on specifics, making GDPR compliance a daunting prospect, particularly for small and medium-sized enterprises (SMEs).
 
+
+ # Developer and Integration Guide (HTTPS and REST API for Logo Integration)
+ 
+ **URLS for Testing and Production**
+ * Development URL : https://salty-savannah-91118.herokuapp.com/
+ * Production URL : https://salty-savannah-2-91118.herokuapp.com/
+ 
+ **Endpoints:**
+ * /company_authentication
+ * /manage_users
+ 
+ **company_authentication**
+ * The first time a company/logo integrates getupsell with their current platform, company_authentication needs to be called with the following parameters:
+
+  > const auth = {
+    type_of_request 
+    email
+    password
+    displayName
+  };
+ 
+
+
  # Developer Guide Creator and Licensing: Monday May 12th, 2021
 
  **Project Managers/Salesforce Developer**
