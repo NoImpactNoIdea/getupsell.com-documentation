@@ -109,6 +109,16 @@
   * user_first_name
   * user_last_name
 
+ # Developer Portal
+ * Dev and Prod Keys
+ * Access to development logs and permissions
+ * Correlated Tasks for the correct user
+
+ **STACK**
+ Plain and Vanilla HTML
+ Javascript
+ Database Connectivity - MongoDB and Firebase
+
  # Developer Guide Creator and Licensing: Monday May 10th, 2021
 
  **Project Manager/Salesforce Developer**
