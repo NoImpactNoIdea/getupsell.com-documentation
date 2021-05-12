@@ -118,7 +118,7 @@
  * Education: MBA
 
  **CREATIVE**
- * Design/UI/UX/: JJ McMillen
+ * Design/UI/UX: JJ McMillen
  * Email: jennifer@getupsell.com
  * LinkedIn: https://www.linkedin.com/in/jennifer-mcmillen/
  * Education: Masters of Art, Design for Sustainability
