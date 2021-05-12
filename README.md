@@ -109,7 +109,7 @@
   * user_first_name
   * user_last_name
 
- # Developer Guide Creator and Licensing: Monday May 12th, 2021
+ # Developer Guide Creator and Licensing: Monday May 10th, 2021
 
  **Project Manager/Salesforce Developer**
  * Project Manager: Brantley Pace
