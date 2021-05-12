@@ -82,11 +82,11 @@
  * The first time a company/logo integrates getupsell with their current platform, company_authentication needs to be called with the following parameters:
 
   > const auth = {
-    type_of_request 
-    email
-    password
-    displayName
-  };
+  > type_of_request 
+  > email
+  > password
+  > displayName
+ >};
  
 
 
