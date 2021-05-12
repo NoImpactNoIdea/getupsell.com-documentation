@@ -38,7 +38,7 @@
  * https://firebase.google.com/docs/storage
 
  
- # CTO Primary Development Machine
+ # Primary Development Machine
  * iMac Pro - Big Sur V 11.1
  * Processor 3.2 GHz 8-Core Intel Xenon W
  * Memory 32 GB 2666 MHz DDR4
