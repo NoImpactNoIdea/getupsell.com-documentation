@@ -79,16 +79,35 @@
  * /manage_users
  
  **company_authentication**
- * The first time a company/logo integrates getupsell with their current platform, company_authentication needs to be called with the following parameters:
-
-  > const auth = {
-  > type_of_request 
-  > email
-  > password
-  > displayName
- >};
+ *The first time a company/logo integrates getupsell with their current platform, company_authentication needs to be called with the following parameters:*
  
+ *String*
+  * type_of_request 
+  * email
+  * password
+  * displayName
+  * sign_up_date
+  * user_uid
 
+        - type_of_request can either be: "registration" || "registration_database_update"
+
+ **registration**
+  * type_of_request 
+  * email
+  * password
+  * displayName
+
+**registration_database_update**
+  * type_of_request
+  * email
+  * sign_up_date
+  * user_uid
+
+ **manage_users**
+  * companyUID
+  * user_UID
+  * user_first_name
+  * user_last_name
 
  # Developer Guide Creator and Licensing: Monday May 12th, 2021
 
