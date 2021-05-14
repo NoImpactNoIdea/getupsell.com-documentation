@@ -109,6 +109,17 @@
   * user_first_name
   * user_last_name
 
+#How to get the Development and Production Keys
+ 1. Make a company account @ app.getupsell.com
+    * Company Name
+    * Company Email
+    * Password
+
+2. Hover over Developer Portal
+    * Select Developer Keys
+    * Make a copy of the Developer Key (60 character string)
+ 
+
  # Developer Portal
  * Dev and Prod Keys
  * Access to development logs and permissions
