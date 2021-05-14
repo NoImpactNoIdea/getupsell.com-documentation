@@ -71,8 +71,9 @@
  # Developer and Integration Guide (HTTPS and REST API for Logo Integration)
  
  **URLS for Testing and Production**
- * Development URL : https://salty-savannah-91118.herokuapp.com/
- * Production URL : https://salty-savannah-2-91118.herokuapp.com/
+ * Development URL : https://dev.getupsell.com/
+ * Production URL : https://prod.getupsell.com/
+ 
  
  **Endpoints:**
  * /company_authentication
@@ -117,7 +118,7 @@
 
 2. Hover over Developer Portal
     * Select Developer Keys
-    * Make a copy of the Developer Key (60 character string)
+    * Make a secure copy of the Developer/Production Keys (60 character string)
  
 
  # Developer Portal
