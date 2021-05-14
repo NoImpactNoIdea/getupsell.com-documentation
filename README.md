@@ -109,7 +109,7 @@
   * user_first_name
   * user_last_name
 
-#How to get the Development and Production Keys
+# How to get the Development and Production Keys
  1. Make a company account @ app.getupsell.com
     * Company Name
     * Company Email
