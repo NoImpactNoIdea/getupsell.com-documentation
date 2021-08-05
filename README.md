@@ -238,5 +238,10 @@
  * Education: MBA/CS
  * Languages: C#, C++, JavaScript, Swift, Kotlin
 
+ **AE**
+ * AE: Sam Blount
+ * Email: sam@getupsell.com
+ * LinkedIn: https://www.linkedin.com/in/samblount/
+
 # Licensing for Source Control
 * License: APACHE LICENSE, VERSION 2.0 (2004) - https://www.apache.org/licenses/LICENSE-2.0.html
