@@ -231,14 +231,14 @@
  * LinkedIn: https://www.linkedin.com/in/jennifer-mcmillen/
  * Education: Masters of Art, Design for Sustainability
   
- **CTO**
+ **Chief Technology Officer**
  * CTO/Developer: Charles Arcodia
  * Email: charliearcodia@gmail.com
  * LinkedIn: https://www.linkedin.com/in/charlie-arcodia-5b7898114/
  * Education: MBA/CS
  * Languages: C#, C++, JavaScript, Swift, Kotlin
 
- **AE**
+ **Account Executive**
  * AE: Sam Blount
  * Email: sam@getupsell.com
  * LinkedIn: https://www.linkedin.com/in/samblount/
