@@ -143,13 +143,66 @@
  
  
  # Deebly Integration END (2 Signals)
+ 
+ # iOS Swift Singleton Example 
+ 
+    import Foundation
 
-
-
-
-
-
-
+    class Service : NSObject {
+   
+    static let shared = Service()
+    
+    func upsellPostRequest(admin_key: String, is_development_key: Bool, type_of_key : String, completion: @escaping ([String: Any]?, Error?) -> Void) {
+        
+        let parameters : [String : Any] = ["admin_key": admin_key, "is_development_key": is_development_key, "type_of_key" : type_of_key]
+        
+        let slug = "targeted_request_key"
+        
+        let url = URL(string: "https://salty-savannah-91118.herokuapp.com/\(slug)")!
+        
+        let session = URLSession.shared
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted) // pass dictionary to data object and set it as request body
+        } catch let error {
+            print(error.localizedDescription)
+            completion(nil, error)
+        }
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let task = session.dataTask(with: request, completionHandler: { data, response, error in
+            
+            guard error == nil else {
+                completion(nil, error)
+                return
+            }
+            
+            guard let data = data else {
+                completion(nil, NSError(domain: "dataNilError", code: -100001, userInfo: nil))
+                return
+            }
+            
+            do {
+                
+                guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] else {
+                    completion(nil, NSError(domain: "invalidJSONTypeError", code: -100009, userInfo: nil))
+                    return
+                }
+                completion(json, nil)
+            } catch let error {
+                print(error.localizedDescription)
+                completion(nil, error)
+            }
+        })
+        
+        task.resume()
+      }
+    }
 
 
 
