@@ -7,11 +7,12 @@
 * Brantely pace, CEO
 * JJ McMillen, Creative 
 * Charles Arcodia, CTO
+* Sam Blount, AE
 
 
 # Overview: Project getupsell.com 
 * Empower your revenue generating teams to become product experts with intuitive analytics insights, intelligently organized into tasks. Know your customers' needs before they do.
-* Traditionally, account executives have very little visibility on how customers are using their products. Because of that, companies sell less than they could and customers are left with “just checking in emails.” Our mission is to help companies grow existing business by empowering their sales teams with product usage insights.
+* Traditionally, Account Executives have very little visibility on how customers are using their products. Because of that, companies sell less than they could and customers are left with “just checking in emails.” Our mission is to help companies grow existing business by empowering their sales teams with product usage insights.
 
  # Living Overview and key Fundamentals (Google Doc Overview)
  https://docs.google.com/document/d/1oZd0UF7xCtHNjL666cglS_HRMJAUVVgwSerWU5AkCls/edit
@@ -66,6 +67,91 @@
  > GDPR is responsible for data security and protecting the end users. Since the penalties for non-conformity is high, please read through the guidelines @ https://gdpr-info.eu for further understanding. The General Data Protection Regulation (GDPR) is the toughest privacy and security law in the world. Though it was drafted and passed by the European Union (EU), it imposes obligations onto organizations anywhere, so long as they target or collect data related to people in the EU. The regulation was put into effect on May 25, 2018. The GDPR will levy harsh fines against those who violate its privacy and security standards, with penalties reaching into the tens of millions of euros.
 
  > With the GDPR, Europe is signaling its firm stance on data privacy and security at a time when more people are entrusting their personal data with cloud services and breaches are a daily occurrence. The regulation itself is large, far-reaching, and fairly light on specifics, making GDPR compliance a daunting prospect, particularly for small and medium-sized enterprises (SMEs).
+
+
+
+
+
+
+
+
+# Deebly Integration START (2 Signals)
+
+ **URL for Testing**
+ 
+    https://salty-savannah-91118.herokuapp.com
+
+# Endpoint
+
+    /deebly_signals
+ 
+# Complete URL
+
+    https://salty-savannah-91118.herokuapp.com/deebly_signals
+
+# Headers
+
+    application/json  Content-Type
+    application/json  Accept
+ 
+ # HTTP Method
+ 
+    POST
+    
+ #  Deebly integration requires 3 keys to be integrated into the Deebly platform. 
+ 
+ > First key (new_client_registration): Triggered when a new client registers for the Deebly platform. 
+ > Second key (new_client_paid_plan): Triggered when a new client engages a paid plan
+ > Third key (client_total_spend_increase): Triggered when a new client moves money to the Deebly platform. 
+
+1. new_client_registration (Place API call into the function that registers new users into the Deebly platform)
+
+      **required parameters
+         
+         "admin_key" :  "Grab this from the dashboard - endpoint /developer_keys under Keys/Development",
+         "is_development_key": Set this to true, as BETA will take place under development,
+         "type_of_key" : "new_client_registration",
+         "bdr_user_uid" : "This is the Business Development Reps unique UID stored in the Deebly Database - for example, Barry's UID", 
+         "bdr_client_uid" : "This is the Business Development Reps client unique UID stored in the Deebly Database", 
+         "bdr_client_email" : "This is the Business Development Reps client's email
+ 
+    
+ 2. new_client_paid_plan (Place API call into the function that registers the client for a paid service)
+
+      **required parameters
+         
+         "admin_key" :  "Grab this from the dashboard - endpoint /developer_keys under Keys/Development",
+         "is_development_key": true,
+         "type_of_key" : "new_client_registration",
+         "bdr_user_uid" : "This is the Business Development Reps unique UID stored in the Deebly Database - for example, Barry's UID", 
+         "bdr_client_uid" : "This is the Business Development Reps client unique UID stored in the Deebly Database", 
+         "bdr_client_email" : "This is the Business Development Reps client's email,
+         "type_of_paid_plan" : "The name of the registered plan the user signed up for"
+    
+ 3. client_total_spend_increase (Place API call into the function that moves money on behalf of the client)
+
+      **required parameters
+         
+         "admin_key" :  "Grab this from the dashboard - endpoint /developer_keys under Keys/Development",
+         "is_development_key": true,
+         "type_of_key" : "new_client_registration",
+         "bdr_user_uid" : "This is the Business Development Reps unique UID stored in the Deebly Database - for example, Barry's UID", 
+         "bdr_client_uid" : "This is the Business Development Reps client unique UID stored in the Deebly Database", 
+         "bdr_client_email" : "This is the Business Development Reps client's email,
+         "type_of_paid_plan" : "The name of the registered plan the user signed up for",
+         "client_total_spend" : "Place the monetary value that the client pays everytime a payment is made"
+ 
+ 
+ # Deebly Integration END (2 Signals)
+
+
+
+
+
+
+
+
+
 
 
  # Developer and Integration Guide (HTTPS and REST API for Logo Integration)
