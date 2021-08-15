@@ -101,7 +101,7 @@
  #  Deebly integration requires 3 keys to be integrated into the Deebly platform. 
  
  > First key (new_client_registration): Triggered when a new client registers for the Deebly platform. 
- > Second key (new_client_paid_plan): Triggered when a new client engages a paid plan
+ > Second key (new_client_paid_plan): Triggered when a new client engages a paid plan.
  > Third key (client_total_spend_increase): Triggered when a new client moves money to the Deebly platform.
  > Every parameter is of type 'string' except for is_development_key is of type bool.
 
