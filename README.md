@@ -123,7 +123,7 @@
          
          "admin_key" :  "Grab this from the dashboard - endpoint /developer_keys under Keys/Development",
          "is_development_key": true,
-         "type_of_key" : "new_client_registration",
+         "type_of_key" : "new_client_paid_plan",
          "bdr_user_uid" : "This is the Business Development Reps unique UID stored in the Deebly Database - for example, Barry's UID", 
          "bdr_client_uid" : "This is the Business Development Reps client unique UID stored in the Deebly Database", 
          "bdr_client_email" : "This is the Business Development Reps client's email,
@@ -135,7 +135,7 @@
          
          "admin_key" :  "Grab this from the dashboard - endpoint /developer_keys under Keys/Development",
          "is_development_key": true,
-         "type_of_key" : "new_client_registration",
+         "type_of_key" : "client_total_spend_increase",
          "bdr_user_uid" : "This is the Business Development Reps unique UID stored in the Deebly Database - for example, Barry's UID", 
          "bdr_client_uid" : "This is the Business Development Reps client unique UID stored in the Deebly Database", 
          "bdr_client_email" : "This is the Business Development Reps client's email,
