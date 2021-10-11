@@ -147,11 +147,11 @@
  
  # Product Integration
  
-> With Upsells API, users can manage tasks using simple HTTPS rest calls with preset parameters depening on the needs of the organization for global API access. 
+> With Upsells API, users can manage tasks using simple HTTPS rest calls with preset parameters depending on the needs of the organization for global API access. 
 
 > For clarity, our REST API is designed and patterned using HTTP protocol.
 
-> For HTTP basic authentication and communication with the upsell servers, users will provide bare minimum credentials such as their Company Email along with        > their Phone number. From here, an account is created with the appropriate development/production keys to access our systems.  
+> For HTTP basic authentication and communication with the Upsell servers, users will provide bare minimum credentials such as their Company Email along with        > their Phone number. From here, an account is created with the appropriate development/production keys to access our systems.  
 
 > From here, developers will implement HTTP calls to dev.getupsell.com along with the appropriate parameters. As an example, the average logo requires 5 keys (5 > API Calls) with an integration time of under 1 hour. 
 
